@@ -1,0 +1,3 @@
+'use strict' = With strict mode, you can not, for example, use undeclared variables. In strict mode, any assignment to a non-writable property, a getter-only property, a non-existing property, a non-existing variable, or a non-existing object, will throw an error.
+
+object process = The process object is a global that provides information about, and control over, the current Node.js process. As a global, it is always available to Node.js applications without using require().
