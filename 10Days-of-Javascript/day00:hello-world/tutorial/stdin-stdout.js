@@ -13,13 +13,17 @@ function ask(i) {
 }
 
 process.stdin.on('data', (data) => {
-answers.push(data.toString().trim());
+    answers.push(data.toString().trim());
 
     if (answers.length < questions.length) {
     	ask(answers.length);
     } else {
         process.exit();
     }
+});
+
+process.on('exit', () => {
+    process.stdout.write(`\nGo ${answers[0]} ${answers[1]} ${answers[2]} \n\n`);
 });
 
 ask(0);
