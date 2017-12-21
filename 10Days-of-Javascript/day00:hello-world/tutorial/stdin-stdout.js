@@ -26,4 +26,8 @@ process.on('exit', () => {
     process.stdout.write(`\nGo ${answers[0]} ${answers[1]} ${answers[2]} \n\n`);
 });
 
+process.on('exit', () => {
+    process.stdout.write('Copyright 2017 Thiago Luiz \n\n');
+});
+
 ask(0);
