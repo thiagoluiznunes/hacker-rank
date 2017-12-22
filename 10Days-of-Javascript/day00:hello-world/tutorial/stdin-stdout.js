@@ -11,7 +11,6 @@ const questions = [
 
 const answers = [];
 
-
 function ask(i) {
     process.stdout.write(`\n${questions[i]} \n\n`);
 }
