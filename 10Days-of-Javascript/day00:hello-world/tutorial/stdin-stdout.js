@@ -1,5 +1,8 @@
 'use strict';
 
+process.stdin.resume();
+process.stdin.setEncoding('utf8');
+
 const questions = [
     'What is your name?',
     'What is your fav habboy?',
@@ -7,6 +10,7 @@ const questions = [
 ];
 
 const answers = [];
+
 
 function ask(i) {
     process.stdout.write(`\n${questions[i]} \n\n`);

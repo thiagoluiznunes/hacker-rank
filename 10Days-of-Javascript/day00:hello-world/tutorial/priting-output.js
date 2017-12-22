@@ -10,7 +10,7 @@ process.stdin.on('data', inputStdin => {
     inputString += inputStdin;
 });
 
-process.stdin.on('end', _ => {
+process.on('SIGINT', _ => {
     inputString = inputString.trim().split('\n').map(string => {
         return string.trim();
     });
