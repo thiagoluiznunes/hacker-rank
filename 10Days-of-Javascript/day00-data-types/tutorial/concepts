@@ -1,0 +1,15 @@
+Dynamic Typing
+
+JavaScript is a loosely typed or dynamic language, meaning you don't need to declare a variable's type ahead of time and the language autmatically determines a variable's type while the program is being processed. That also means that you can reassign a single variable to reference different types.
+
+Declaration and Initialization
+
+The first time a variable appears in your script is considered its declaration. The first mention of the variable sets it up in memory, and the name allows you to refer back to it in your subsequent lines of code. You should declare variables using the var keyword before using them. If you do not initialize a variable that was declared using the var keyword, it automatically takes on the value undefined.
+
+Coercion
+
+In JavaScript, you can perform operations on values of different types without raising an exception. The JavaScript interpreter implicitly converts, or coerces, one of the data types to that of the other, then performs the operation. The rules for coercion of string, number, or boolean values are as follows:
+
+    If you add a number and a string, the number is coerced to a string.
+    If you add a boolean and a string, the boolean is coerced to a string.
+    If you add a number and a boolean, the boolean is coerced to a number.
