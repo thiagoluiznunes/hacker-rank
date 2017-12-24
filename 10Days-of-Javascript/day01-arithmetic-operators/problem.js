@@ -44,5 +44,3 @@ rl.on('line', input => {
         rl.close();
     }
 });
-
-    const test;
