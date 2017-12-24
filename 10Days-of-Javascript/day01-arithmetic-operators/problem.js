@@ -18,10 +18,10 @@ function getArea(length, width) {
 }
 
 function getPerimeter(length, width) {
-	let perimeter;
-	perimeter = 2 * (length + width);
+    let perimeter;
+    perimeter = 2 * (length + width);
 
-	return perimeter;
+    return perimeter;
 }
 
 let length;
@@ -31,18 +31,16 @@ let count = 0;
 rl.output('Type it area length');
 
 rl.on('line', input => {
-	if (count == 0) {
+    if (count == 0) {
         length = parseInt(input);
         rl.output('Type it area width');
         count++;
-	} else {
-		width = parseInt(input);
+    } else {
+        width = parseInt(input);
         rl.output(`Area: ${getArea(length, width)}`);
         rl.output(`Perimeter: ${getPerimeter(length, width)}`);
         rl.output()
 
-		rl.close();
-	}
+        rl.close();
+    }
 });
-
-
