@@ -1,0 +1,21 @@
+JavaScript Errors
+
+There are three types of errors in programming:
+1. Syntax Error (Parsing Error)
+
+In a traditional programming language, this type of error occurs at compile time; because JavaScript is an interpreted language, this type of error arises when the code is interpreted. When a syntax error occurs in JavaScript, only the code contained within the same thread as the syntax error is affected; independent code running in other threads will still be executed, as nothing in them depends on the code containing the error. For example, consider the following code containing a syntax error:
+
+console.log("Hello" 
+
+This produces the following error: SyntaxError: missing ) after argument list. This is because we failed to add a closing parenthesis to our call to console.log.
+2. Runtime Error (Exception)
+
+Commonly referred to as exceptions, this type of error occurs during execution (i.e., after compilation or interpretation). Once a runtime error is encountered, an exception is thrown in the hope that it will be caught by a subsequent section of code containing instructions on how to recover from the error. Much like syntax errors, these affect the thread where they occured but allow other, independent threads to continue normal execution. For example, consider the following code containing a runtime error:
+
+function sum(a, b) {}
+add(2, 3) 
+
+This produces the following error: ReferenceError: add is not defined. This is because we attempted to call the add function without ever declaring and defining it.
+3. Logical Error
+
+These are some of the most difficult errors to isolate because they cause the program to operate without terminating or crashing, but the operations the code performs are not correct. Unlike syntax and runtime errors which arise due to some violation of the rules of the language, these errors occur when there is a mistake in your the code's logic. 
