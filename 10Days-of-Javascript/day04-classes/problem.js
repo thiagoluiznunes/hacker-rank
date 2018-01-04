@@ -10,6 +10,17 @@ const rl = readline.createInterface({
     output: console.log
 });
 
+class Polygon {
+    constructor(arr) {
+        this.array = arr;
+    }
+    perimeter() {
+        return this.array.reduce((previous, current, index, array) => previous + current);
+    }
+}
 rl.on('line', input => {
+    let pol = new Polygon(input.trim().split(' ').map(s => parseInt(s)));
+    console.log(pol.perimeter());
 
+    rl.close();
 });
