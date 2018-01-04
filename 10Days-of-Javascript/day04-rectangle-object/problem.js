@@ -10,6 +10,21 @@ const rl = readline.createInterface({
     output: console.log
 });
 
-rl.on('line', input => {
+function Rectangle(length, width) {
+    this.length = length;
+    this.width = width;
+    this.perimeter = 2 * (length + width);
+    this.area = length * width;
+}
 
+rl.on('line', input => {
+    let arr = input.trim().split(' ').map(string => parseInt(string));
+    let rec = new Rectangle(arr[0], arr[1]);
+
+    console.log('Length: ', rec.length);
+    console.log('Width: ', rec['width']);
+    console.log('Perimeter: ', rec.perimeter);
+    console.log('Area: ', rec['area']);
+
+    rl.close();
 });
