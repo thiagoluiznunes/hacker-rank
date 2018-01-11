@@ -9,3 +9,16 @@ const rl = readline.createInterface({
     input: process.stdin,
     output: console.log
 });
+
+function regexVar() {
+    const re = new RegExp('^a.+a$|^e.+e$|^i.+i$|^o.*o$|^u.+u$');
+
+    return re;
+}
+
+rl.on('line', input => {
+    const regex = regexVar();
+    console.log(regex.test(input));
+
+    rl.close();
+});

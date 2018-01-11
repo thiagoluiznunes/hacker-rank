@@ -5,6 +5,7 @@ const re = /ab+c/;
 
 // Constructor: performed at runtime
 const re_ = new RegExp('ab+c');
+const re_2 = new RegExp('^a.+a$|^e.+e$|^i.+i$|^o.*o$|^u.+u$');
 
 const test = 'Thiago Luiz Pereira Nunes';
 const test2 = 'Thiago foo barr Nunes';
@@ -37,3 +38,19 @@ console.log(test2.match('Thiago|Nunes'));
 // Search by ocurrences number
 console.log(test3.match('a{3}'));
 console.log(test3.match('a{1,5}'));
+
+const opened = 'aberta';
+const he = 'ele';
+const isci = 'isci';
+const another = 'outro';
+const bird = 'urubu';
+const error = 'ee';
+const aewxyzae = 'aewxyzae';
+
+console.log(opened.match(re_2));
+console.log(he.match(re_2));
+console.log(isci.match(re_2));
+console.log(another.match(re_2));
+console.log(bird.match(re_2));
+console.log(error.match(re_2));
+console.log(aewxyzae.match(re_2));
