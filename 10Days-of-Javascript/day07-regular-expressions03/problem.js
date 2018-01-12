@@ -11,14 +11,15 @@ const rl = readline.createInterface({
 });
 
 function regexVar() {
-    const re = new RegExp('^(Mr|Mrs|Ms|Dr|Er)\\.[a-zA-z]+$');
+    // 'g' means that will match all occurrences
+    const re = new RegExp('[0-9]+', 'g');
 
     return re;
 }
 
 rl.on('line', input => {
     const regex = regexVar();
-    console.log(regex.test(input));
+    console.log(input.match(regex));
 
     rl.close();
 });
