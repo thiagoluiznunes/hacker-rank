@@ -1,5 +1,6 @@
 const clickButton = document.createElement('button');
 const clickButton2 = document.createElement('button2');
+let aux = 0;
 
 clickButton.id = 'myButton';
 clickButton.innerHTML = 'Click Me';
@@ -14,9 +15,11 @@ document.body.appendChild(clickButton);
 document.body.appendChild(clickButton2);
 
 clickButton.onclick = function() {
-    clickButton.innerHTML = 'New inner';
+    aux++;
+    clickButton.innerHTML = aux;
 }
 
 clickButton2.addEventListener('click', function() {
     clickButton2.innerHTML = 'You clicked me"';
+    clickButton2.classList.add('btn-class');
 });
