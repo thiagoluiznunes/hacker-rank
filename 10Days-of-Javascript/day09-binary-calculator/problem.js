@@ -20,6 +20,14 @@ btnClr.onclick = () => {
     res.innerHTML = '';
 }
 btnEql.onclick = () => {
+    const inner = res.innerHTML;
+    const reg = new RegExp('\\*|\\+|\\-|\\/');
+    const op = inner.search(reg);
+
+    const arr = inner.split(inner.charAt(op));
+
+    console.log(arr);
+
     res.innerHTML = '';
     res.innerHTML += 'result';
 }
