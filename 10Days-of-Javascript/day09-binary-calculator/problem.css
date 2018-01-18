@@ -7,17 +7,21 @@
 	height: 48px;
 	font-size: 20px;
 }
-.buttonContainer {
+.btnContainer {
 
 }
-.buttonContainer > .buttonClass {
+.btnContainer > .btnClass {
 	width: 25%;
 	height: 36px;
 	font-size: 18px;
 	margin: 0px;
 	float: left;
 }
-.buttonContainer > .buttonClassBin {
+.btnContainer > .btnClassBin {
 	background-color: #90EE90;
 	color: #964B00;
+}
+.btnContainer > .btnClassClrEql {
+	background-color: #006400;
+	color: #FFFFFF;
 }
