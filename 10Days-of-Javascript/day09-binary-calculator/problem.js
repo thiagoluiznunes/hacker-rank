@@ -22,14 +22,28 @@ btnClr.onclick = () => {
 btnEql.onclick = () => {
     const inner = res.innerHTML;
     const reg = new RegExp('\\*|\\+|\\-|\\/');
-    const op = inner.search(reg);
+    const position = inner.search(reg);
+    const operatior = inner.charAt(position);
+    const arr = inner.split(operatior);
 
-    const arr = inner.split(inner.charAt(op));
-
-    console.log(arr);
+    const b1 = parseInt(arr[0], 2);
+    const b2 = parseInt(arr[1], 2);
 
     res.innerHTML = '';
-    res.innerHTML += 'result';
+    switch (operatior) {
+        case '+':
+            res.innerHTML += (b1+b2).toString(2);
+            break;
+        case '-':
+            res.innerHTML += (b1-b2).toString(2);
+            break;
+        case '*':
+            res.innerHTML += (b1*b2).toString(2);
+            break;
+        case '/':
+            res.innerHTML += (b1/b2).toString(2);
+            break;
+    }
 }
 btnSum.onclick = () => {
     res.innerHTML += '+';
