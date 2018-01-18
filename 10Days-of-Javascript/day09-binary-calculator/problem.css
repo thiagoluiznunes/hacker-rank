@@ -25,3 +25,7 @@
 	background-color: #006400;
 	color: #FFFFFF;
 }
+.btnContainer > .btnClassOpe {
+	background-color: #000000;
+	color: #FF0000;
+}
