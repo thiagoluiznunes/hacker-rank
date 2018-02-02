@@ -12,9 +12,18 @@ This repository have contain questions solutions developed by web platform Hacke
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
 
-1. Clone the project
+1. Clone the project : 
+```
+user@user~/git clone https://github.com/ThiagoLuizNunes/hacker-rank.git
+```
 2. Move to the desired folder
-3. Use the commando "node" to run the solutions
+3. Use the commando "node" to run the solutions. Example:
+```
+cd /10Days-of-Javascript/day00-data-types/
+```
+```
+node problem.js
+```
 
 ### Prerequisites
 
