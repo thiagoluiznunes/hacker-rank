@@ -4,7 +4,7 @@ Toolkit: Node.js
 
 This repository have contain questions solutions developed by web platform Hackerrank.
 
-## List Tracks
+## Tracks
 
 - [10 Days of JavaScript](https://github.com/ThiagoLuizNunes/hacker-rank/tree/master/10Days-of-Javascript)
 
