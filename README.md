@@ -16,11 +16,11 @@ These instructions will get you a copy of the project up and running on your loc
 ```
 user@user~/git clone https://github.com/ThiagoLuizNunes/hacker-rank.git
 ```
-2. Move to the desired folder
-3. Use the commando "node" to run the solutions. Example:
+2. Go to desired folder:
 ```
 cd /10Days-of-Javascript/day00-data-types/
 ```
+3. Use the command "node" to run the solutions. Example:
 ```
 node problem.js
 ```
