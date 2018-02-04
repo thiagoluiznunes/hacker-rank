@@ -1,0 +1,5 @@
+What is JSON Web Token? 
+
+Response: Is a open standard(RFC) that defines a compact and self-conatined war for securely transmitting information between parties as a JSON object. This information can be verifed and trusted because it is a digitally signed. JWTs can be signed using a secret or a public/private key pair using RSA.
+
+When should you use JSON Web Token
