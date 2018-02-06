@@ -1,8 +1,9 @@
 # Hacker-rank
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/1d1c5fa1fb4f108aa832/maintainability)](https://codeclimate.com/github/ThiagoLuizNunes/hacker-rank/maintainability)
-
 [![Test Coverage](https://api.codeclimate.com/v1/badges/1d1c5fa1fb4f108aa832/test_coverage)](https://codeclimate.com/github/ThiagoLuizNunes/hacker-rank/test_coverage)
+
+---
 Toolkit: Node.js
 
 This repository have contain questions solutions developed by web platform Hackerrank.
