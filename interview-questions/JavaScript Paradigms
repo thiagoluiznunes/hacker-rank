@@ -1,3 +1,12 @@
 Can you name two pragramming paradigms important for JavaScript app developers?
 
 Response: JavaScript is a multi-paradigm language, supporting imperative/procedural programming along with OOP (Object-Oriented Programming) and functional programming. JavaScript supports OOP with prototypal inheritance.
+
+Good to hear:
+
+    Prototypal inheritance (also: prototypes, OLOO).
+    Functional programming (also: closures, first class functions, lambdas).
+
+Red flags:
+
+    No clue what a paradigm is, no mention of prototypal oo or functional programming.
