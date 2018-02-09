@@ -1,3 +1,4 @@
+// Calculate the average of three points
 const average = (x1, y1, x2, y2, x3, y3) => {
     let result;
     let x1Tox2 = Math.sqrt(((x2-x1)*2) + (y2-y1)*2); 
@@ -9,6 +10,7 @@ const average = (x1, y1, x2, y2, x3, y3) => {
     return result;
 }
 
+// Check if the string is a palindrome
 const isAlmostPalindrome = (s) => {
     let result;
     let splitString = s.split("");
@@ -30,6 +32,7 @@ const isAlmostPalindrome = (s) => {
     return result;
 }
 
+// Find the most popular number in array 
 const mostPopularNumber = (array, size) => {
     let most = 0;
     let position = 0;
