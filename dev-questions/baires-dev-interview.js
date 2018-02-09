@@ -1,3 +1,24 @@
+'use strict' 
+
+process.stdin.resume();
+process.stdin.setEncoding('utf-8');
+
+const readline = require('readline');
+
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: console.log
+});
+
+rl.on('line', input => {
+    // let res = input.trim().split(' ').map(n => parseInt(n));
+    // res = average(res[0], res[1], res[2], res[3], res[4], res[5]);
+    // rl.output(res);
+    rl.output(isAlmostPalindrome(input.trim()));
+
+    rl.close();
+});
+
 // Calculate the average of three points
 const average = (x1, y1, x2, y2, x3, y3) => {
     let result;
@@ -19,11 +40,11 @@ const isAlmostPalindrome = (s) => {
     let arraySize = splitString.length;
     
     for (let i = 0; i <= arraySize; i++) {
-        if (splitString[i] != reverseArray[arraySize-1]) {
+        if (splitString[i] != reverseArray[arraySize-1-i]) {
             count++;
         }
     }
-    if (count > 1) {
+    if (count > 2) {
         result = false;
     } 
     else {
