@@ -1,0 +1,10 @@
+ What Are Pure Functions And Why Use Them?
+
+ 	1. The function always returns the same result if the same arguments are passed in. It does not depend on any state, or data, change during a program's execution. It must only depend on its input arguments.
+
+ 	2. The function does not produce any observable side effects such as network requests, input and output devices, or data mutation.
+
+ 	If it passes the above 2 requeriments it's pure.
+
+ 	- Pure functions are used heavily in Functional Programming. And, libraries such as ReactJS and Redux require the use of pure functions. 
+ 	- Another reason to use pure functions where possible is testing and refactoring.	One of the major benefits of using pure functions is they are immediately testable. They will always produce the same result if you pass in the same arguments.
