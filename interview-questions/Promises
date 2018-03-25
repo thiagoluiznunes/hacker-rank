@@ -1,0 +1,4 @@
+What are Promises?
+
+Promises are a concurrency primitive, first described in the 80s. Now they are part of most modern 
+programming languages to make your life easier. Promises can help you better handle async operations.
