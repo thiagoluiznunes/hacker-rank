@@ -6,7 +6,7 @@
 ---
 Toolkit: Node.js
 
-This repository have contain questions solutions developed by web platform Hackerrank.
+This repository have contain questions solutioned developed by web platform Hackerrank.
 
 ## Tracks
 
