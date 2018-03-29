@@ -1,0 +1,8 @@
+What tools can be used to assure consistent style? Why is it important?
+
+When working in a team, consistent style is important, so team members can modify more projects easily,
+without having to get used to a new style each time. Also, it can help eliminate programming issues using static analysis.
+
+Tools that can help:
+  - ESLint
+  - Standard
